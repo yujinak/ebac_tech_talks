@@ -12,16 +12,94 @@
     />
 
     <link rel="stylesheet" href="styles/main.scss" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="hero">
       <div class="container">
         <img class="hero__logo" src="./images/ebac_logo.svg" alt="" />
         <p class="hero__text">
-          O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+          O maior evento de tecnologia do Brasil começa em
+          <span id="contador"></span>
         </p>
+        <div class="infos-bar">
+          <ul class="infos-bar__infos">
+            <li class="infos-bar__infos__item">
+              <b>Localização</b>
+              Alianz Parque - Barra Funda - São Paulo
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Preço</b>
+              A partir de R$ 120,00
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Quando</b>
+              12/12/2022, às 19h00
+            </li>
+          </ul>
+          <a href="#" class="button button--primary">Garantir minha vaga</a>
+        </div>
       </div>
     </header>
+
+    <section class="event event--frontend">
+      <div class="container" data-aos="fade-right">
+        <div class="event__details">
+          <h2 class="event__details__title">Front-end</h2>
+          <p class="event__details__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium earum, accusamus quo ab temporibus facere voluptatum
+            sapiente itaque optio quis amet fugit impedit iste maiores adipisci
+            illum ratione pariatur a.
+          </p>
+        </div>
+        <img class="event__image" src="./images/frontend.png" alt="" />
+      </div>
+    </section>
+    <section class="event event--ux-ui event--image-left">
+      <div class="container" data-aos="fade-left">
+        <div class="event__details">
+          <h2 class="event__details__title">UX/UI</h2>
+          <p class="event__details__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium earum, accusamus quo ab temporibus facere voluptatum
+            sapiente itaque optio quis amet fugit impedit iste maiores adipisci
+            illum ratione pariatur a.
+          </p>
+        </div>
+        <img class="event__image" src="./images/ui-ux.png" alt="" />
+      </div>
+    </section>
+    <section class="event event--data-science">
+      <div class="container" data-aos="fade-right">
+        <div class="event__details">
+          <h2 class="event__details__title">Data Science</h2>
+          <p class="event__details__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium earum, accusamus quo ab temporibus facere voluptatum
+            sapiente itaque optio quis amet fugit impedit iste maiores adipisci
+            illum ratione pariatur a.
+          </p>
+        </div>
+        <img class="event__image" src="./images/data.png" alt="" />
+      </div>
+    </section>
+    <section class="event event--backend event--image-left">
+      <div class="container" data-aos="fade-left">
+        <div class="event__details">
+          <h2 class="event__details__title">Back-end</h2>
+          <p class="event__details__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium earum, accusamus quo ab temporibus facere voluptatum
+            sapiente itaque optio quis amet fugit impedit iste maiores adipisci
+            illum ratione pariatur a.
+          </p>
+        </div>
+        <img class="event__image" src="./images/backend.png" alt="" />
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="scripts/main.js"></script>
   </body>
