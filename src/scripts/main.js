@@ -14,7 +14,7 @@ const contaAsHoras = setInterval(() => {
   const agora = new Date();
   const timeStampAtual = agora.getTime();
 
-  const distanciaAteOEvento = timeStampAtual - timeStampDoEvento;
+  const distanciaAteOEvento = timeStampDoEvento - timeStampAtual;
 
   const diasEmMs = 1000 * 60 * 60 * 24;
   const horasEmMs = 1000 * 60 * 60;
